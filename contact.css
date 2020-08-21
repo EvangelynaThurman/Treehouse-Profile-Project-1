@@ -1,0 +1,355 @@
+/* Global Layout Set-up */
+* {
+    box-sizing: border-box;
+  }
+   body,html{
+     width: 100%;
+     height: 100%;
+   }
+
+
+  body {
+    background: url("images/typewritercrop.jpeg") no-repeat bottom fixed;
+    background-color: antiquewhite;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .bubbels{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .bubble{
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: teal;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: flying 15s infinite ease-in;
+
+  }
+  .bubble:nth-child(1){
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+  }
+
+  .bubble:nth-child(2){
+    width: 40px;
+    height: 40px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+
+  .bubble:nth-child(3){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+  }
+
+  .bubble:nth-child(4){
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+  }
+
+  .bubble:nth-child(5){
+    width: 40px;
+    height: 40px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+
+  .bubble:nth-child(6){
+    width: 40px;
+    height: 40px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+  }
+
+  .bubble:nth-child(7){
+    width: 40px;
+    height: 40px;
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+  }
+
+  .bubble:nth-child(8){
+    width: 40px;
+    height: 40px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+
+  .bubble:nth-child(9){
+    width: 40px;
+    height: 40px;
+    left: 70%;
+    animation-duration: 9s;
+    animation-delay: 0s;
+  }
+
+  .bubble:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 85%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+
+
+  .bubble:nth-child(11){
+    width: 40px;
+    height: 40px;
+    left: 90%;
+    animation-duration: 8s;
+    animation-delay: 6s;
+  }
+
+
+  .bubble:nth-child(12){
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+
+
+  .bubble:nth-child(13){
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+
+
+  .bubble:nth-child(14){
+    width: 40px;
+    height: 40px;
+    left: 90%;
+    animation-duration: 10s;
+    animation-delay: 6s;
+  }
+
+
+  @keyframes flying {
+    0%{
+      bottom: -1080px;
+      transform: translateX(0);
+
+    }
+    50%{
+      transform: translateX(100px)
+    }
+
+    100%{
+      bottom: 1080px;
+      transform: translateX(-200px);
+    }
+  }
+
+  /* Link Styles */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+
+  /* Section Styles */
+
+  .main-nav {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    text-align: center;
+    z-index: 11;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+  .nav .name {
+      display: block;
+      margin-right: auto;
+      color:black;
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+        z-index: 1000000000;
+  }
+  .nav a {
+    transition: all .5s;
+  }
+  .nav a:hover {
+    color:pink;
+  }
+
+  header {
+    text-align: left;
+  }
+  header {
+    line-height: 1.5;
+  }
+
+   .phone-image {
+    position: relative;
+    top: 7em;
+    right: -5em;
+    margin-top: 5px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 3px solid teal;
+    z-index: 16;
+}
+
+.phone-image:hover{
+  transition: 1s;
+  transform: scale(1.2) rotate(-50deg);
+  border: 3px dashed hotpink;
+}
+
+.letter-image {
+ position: relative;
+ top: 7em;
+ right: -49em;
+ margin-top: 5px;
+ width: 95px;
+ height: 95px;
+ border-radius: 50%;
+ border: 3px solid teal;
+ z-index: 15;
+}
+
+.letter-image:hover {
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(1.2) rotate(50deg);
+  border: 3px dashed hotpink;
+}
+
+
+.profile-image {
+ position: relative;
+ top: 7em;
+ right: -18em;
+ margin-top: 5px;
+ width: 95px;
+ height: 95px;
+ border-radius: 50%;
+ border: 3px solid teal;
+ z-index:14;
+}
+
+.profile-image:hover {
+  cursor: pointer;
+  transition: all 3s;
+  transform: scale(2.1) rotate(360deg);
+  border: 3px dashed hotpink;
+}
+
+  .contact {
+    position:relative;
+    top: .07em;
+    right: -6em;
+
+    text-align: left;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto;
+  }
+
+  .phone {
+    position: relative;
+    top: 4em;
+    right: -20em;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+  }
+
+.email {
+  position: relative;
+  top: 4em;
+  right: -20em;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  z-index: 13;
+}
+
+
+
+
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+
+    .flex {
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex;
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    header {
+      min-height: 470px;
+      padding-right:500px;
+    }
+
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px;
+    }
+
+
+    main {
+      padding-top: 20px;
+    }
+
+    main p {
+      line-height: 1.6em;
+    }
+
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+  }
