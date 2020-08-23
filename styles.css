@@ -233,21 +233,61 @@ header {
     background-size: contain;
     width: 100%;
     overflow: hidden;
-    margin-top: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 
 }
-/* header .profile-image {
+header .profile-image {
   position: relative;
-  top: 20em;
-  left: 20px;
+  top: 34em;
+  right: -14.8em;
   margin-top: 5px;
   width: 125px;
-  height: 150px;
+  height: 125px;
   border-radius: 50%;
-  border: 3px solid rgb(42, 255, 42);
-} */
+  border: 3px solid antiquewhite;
+  z-index:2000;
+}
+
+.profile-image:hover{
+  cursor: pointer;
+  top: 20em;
+  transition: all 3s;
+  transform: scale(5) rotate(360deg);
+  border: 1px dashed lightpink;
+  filter: blur(2px);
+  filter: brightness(65%);
+  z-index: 2500;
+}
+
+.textwithBlurredBg{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 4px;
+  position: relative;
+  z-index: 50000000;
+}
+
+.textwithBlurredBg :not(img){
+  top: 5em;
+  left: 11em;
+  position: relative;
+  top: 30%;
+  z-index:100000;
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+
+}
+
+
+.textwithBlurredBg:hover :not(img){
+opacity: 1;
+  transition: 4s;
+}
 
 .intro {
   position: relative;
@@ -261,7 +301,7 @@ header {
 }
 .more {
   position: absolute;
-  right: 120px;
+  left: 52em;
   top: 5em;
   text-align: left;
 
@@ -285,8 +325,8 @@ header {
   position: relative;
   border: 3px solid green;
   margin-bottom:10px;
-  left: 54.5em;
-  bottom: 3em;
+  left: 57em;
+  bottom: 14em;
 }
 
 .button p {
