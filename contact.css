@@ -223,7 +223,7 @@
 
    .phone-image {
     position: relative;
-    top: 7em;
+    top: 4em;
     right: -5em;
     margin-top: 5px;
     width: 95px;
@@ -241,7 +241,7 @@
 
 .letter-image {
  position: relative;
- top: 7em;
+ top: 4em;
  right: -49em;
  margin-top: 5px;
  width: 95px;
@@ -261,7 +261,7 @@
 
 .profile-image {
  position: relative;
- top: 7em;
+ top: 4em;
  right: -18em;
  margin-top: 5px;
  width: 95px;
@@ -293,7 +293,7 @@
 
   .phone {
     position: relative;
-    top: 4em;
+    top: 2em;
     right: -20em;
     text-align: center;
     color: black;
@@ -303,7 +303,7 @@
 
 .email {
   position: relative;
-  top: 4em;
+  top: 2em;
   right: -20em;
   text-align: center;
   color: black;

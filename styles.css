@@ -7,13 +7,6 @@
 
  }
 
-.audio {
-  background: antiquewhite;
- position: fixed;
- bottom:  0;
- right:  0;
- z-index: 1111;
-}
 body {
   text-align: center;
   background-color: antiquewhite;
